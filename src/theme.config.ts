@@ -1,67 +1,77 @@
-export const THEME_CONFIG: App.Locals['config'] = {
+export const THEME_CONFIG: App.Locals["config"] = {
   /** blog title */
-  title: "活版印字",
+  title: "Academy",
   /** your name */
-  author: "Typography",
+  author: "Angular",
   /** website description */
-  desc: "Rediscory the beauty of typography",
+  desc: "Inspect",
   /** your deployed domain */
   website: "https://astro-theme-typography.vercel.app/",
   /** your locale */
-  locale: "en-us",
+  locale: "es-cl",
   /** theme style */
   themeStyle: "light",
   /** your socials */
   socials: [
-    {
-      name: "github",
-      href: "https://github.com/moeyua/astro-theme-typography",
-    },
-    {
-      name: "rss",
-      href: "/atom.xml",
-    },
-    {
-      name: "twitter",
-      href: "https://github.com/moeyua/astro-theme-typography",
-    },
-    {
-      name: "mastodon",
-      href: "https://github.com/moeyua/astro-theme-typography",
-    }
+    //   {
+    //     name: "github",
+    //     href: "https://github.com/moeyua/astro-theme-typography",
+    //   },
+    // {
+    //   name: "rss",
+    //   href: "/atom.xml",
+    // },
+    //   {
+    //     name: "twitter",
+    //     href: "https://github.com/moeyua/astro-theme-typography",
+    //   },
+    //   {
+    //     name: "mastodon",
+    //     href: "https://github.com/moeyua/astro-theme-typography",
+    //   },
   ],
   /** your header info */
   header: {
-    twitter: "@moeyua13",
+    twitter: " ",
   },
   /** your navigation links */
   navs: [
     {
-      name: "Posts",
+      name: "Glosario",
       href: "/posts/page/1",
     },
     {
-      name: "Archive",
-      href: "/archive",
+      name: "Blog",
+      href: "/posts/page/1",
     },
     {
-      name: "Categories",
-      href: "/categories"
+      name: "Components",
+      href: "/components/page/1",
     },
     {
-      name: "About",
+      name: "Templates",
+      href: "/templates/page/1",
+    },
+    // {
+    //   name: "Archive",
+    //   href: "/archive",
+    // },
+    {
+      name: "Temario",
+      href: "/temario",
+    },
+    {
+      name: "Training",
       href: "/about",
     },
   ],
   /** your category name mapping, which the `path` will be shown in the url */
-  category_map: [
-    { name: "胡适", path: "hu-shi" },
-  ],
+  category_map: [{ name: "胡适", path: "hu-shi" }],
   /** your comment provider */
   comments: {
     disqus: {
       // please change this to your disqus shortname
-      shortname: "typography-astro",
+      shortname: "ng academy",
     },
     // giscus: {
     //   repo: 'moeyua/astro-theme-typography',
@@ -80,6 +90,5 @@ export const THEME_CONFIG: App.Locals['config'] = {
     // twikoo: {
     //   envId: "https://twikoo-tau-flame.vercel.app",
     // }
-  }
-}
-
+  },
+};

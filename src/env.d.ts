@@ -12,35 +12,35 @@ declare namespace App {
       /** your deployed domain */
       website: string;
       /** your locale */
-      locale: keyof typeof import('./i18n.ts').LANGUAGES;
+      locale: keyof typeof import("./i18n.ts").LANGUAGES;
       /** theme style */
-      themeStyle: 'light' | 'auto' | 'dark';
+      themeStyle: "light" | "auto" | "dark";
       /** your socials */
       socials: Array<{
         name: string;
         href: string;
-      }>,
+      }>;
       /** your header info */
       header: Object<{
         twitter: String;
-      }>,
+      }>;
       /** your navigation links */
       navs: Array<{
         name: string;
         href: string;
-      }>,
+      }>;
       /** category mapping */
       category_map: Array<{
         name: string;
         path: string;
-      }>,
+      }>;
       /** comments */
       comments?: {
-        disqus?: Disqus,
-        giscus?: Giscus,
-        twikoo?: Twikoo
-      }
-    }
+        disqus?: Disqus;
+        giscus?: Giscus;
+        twikoo?: Twikoo;
+      };
+    };
     translate: (key: string, param?: string | number) => string;
   }
 }
@@ -56,17 +56,17 @@ interface Disqus {
 }
 
 interface Giscus {
-  repo: import('giscus').Repo;
+  repo: import("giscus").Repo;
   repoId?: string;
   category?: string;
   categoryId?: string;
-  mapping?: import('giscus').Mapping;
+  mapping?: import("giscus").Mapping;
   term?: string;
-  strict: import('giscus').BooleanString;
-  reactionsEnabled: import('giscus').BooleanString;
-  emitMetadata: import('giscus').BooleanString;
-  inputPosition: import('giscus').InputPosition;
-  theme: import('giscus').Theme;
-  lang: import('giscus').AvailableLanguage;
-  loading: import('giscus').Loading;
+  strict: import("giscus").BooleanString;
+  reactionsEnabled: import("giscus").BooleanString;
+  emitMetadata: import("giscus").BooleanString;
+  inputPosition: import("giscus").InputPosition;
+  theme: import("giscus").Theme;
+  lang: import("giscus").AvailableLanguage;
+  loading: import("giscus").Loading;
 }
